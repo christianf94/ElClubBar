@@ -76,8 +76,8 @@ body{
         text-align: center;
         display: flex;
         justify-content: flex-end;
-        align-items: cent;
-        background: $segundario;
+        align-items: center;
+        
         height:70rem;
         .video__title--END{
             display: flex;
@@ -108,7 +108,7 @@ video{
         text-align: center;
         flex-direction: column;
         height: auto;
-        background: $segundario;
+        
         h1{
             color:black;
             font-size: 4rem;
@@ -120,13 +120,14 @@ video{
         }
         h5{
             color:black;
-            font-size: 2.2rem;
+            font-size: 2.4rem;
         }
         p{
             font-size: 2rem;
+            text-align: justify; 
         }
         .contenido__info-center{
-            text-align: center;
+            text-align: left;
             flex-wrap: nowrap;
             .info__carousel-text{
                 max-width: 100%;
@@ -137,6 +138,7 @@ video{
                 max-width: 100%;
                 max-height: 100%;
                 margin:2 2 2 0px;
+                padding: 5px;
                 h3{
                     color:white;
                 }
@@ -192,6 +194,17 @@ video{
             .calendario__text-color{
                 background: rgb(34, 33, 33);
                 color: white;
+            }
+        }
+        .contenido_contacto-text{
+            h2{
+                font-weight: bold;
+                font-size: 2.5rem;
+                text-align:center;
+            }
+            p{
+                font-size: 2rem;
+                text-align:center;
             }
         }
     }
@@ -266,6 +279,8 @@ video{
             background: #f7800071;
         }
         .contenido__title-text{
+            width:100%;
+            height: 100%;
             margin: 20px 0 0 0;
             h1{
                 background-color:black;
@@ -296,7 +311,7 @@ video{
                 border-radius: 15px;
                 padding: 10px;
                 margin:15px;
-                border: solid black;
+                border: solid 2px black;
                 background-color:#d6d5d5;
                 }
             .items__divs-row:hover{
@@ -351,6 +366,7 @@ video{
             border-radius: 0px 32px 0px 38px;
             box-shadow: 13px 2px 29px -9px rgba(0,0,0,0.75);    
             animation-name: aparecer;
+            width:85%;
             }
             .menu__img-img{
                 width:40%;
@@ -362,21 +378,22 @@ video{
                 transform: scale(1.05);
                 transition: 0s,0.5s;
             } 
-            .menu__pedidos-a{
-            margin: 15px;
-            width: 60%;
-            }   
+            .contenid__rappi-div{
+                margin: 40px;
+                h1{
+                    text-align:center;
+                    font-size: 3rem;
+                }
+                .menu__pedidos-a{
+                    margin: 10px;
+                    width: 60%;
+                    }
+            }
         }
     }
 
 //----------------------------------------------------------------SOBRE NOSOTROS---------------------------------------------------------//
-    .contenedor__contenido{
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(#ffffff,#d9d9d9);
-    }
+
         .aticulo__principal-center{
             display: flex;
             flex-wrap: wrap;
@@ -386,7 +403,7 @@ video{
             padding: 10px;
             background-color:#fca211e7;
             border-radius: 31px 31px 31px 31px;
-            box-shadow: -2px -17px 53px -30px rgba(0,0,0,0.66);
+            
             animation-name: aparecer;
             animation-duration: 2s;
         }
@@ -424,12 +441,13 @@ video{
             padding: 10px;
         }
         .contenido__info-text{
-            width:50%;
+            width: 60%;
             font-size: 2rem;
             margin: 10px;
             padding: 10px;
         }
         .info__title-text{
+            padding: 10px;
             background-color: black;
             color: white;
             }
@@ -437,7 +455,7 @@ video{
                 text-align: justify;
                 background-color: rgba(51, 50, 50, 0.336);
                 margin: 1px;
-                padding: 1px;
+                padding: 10px;
             }
         .info__p-a{
             display: flex;
