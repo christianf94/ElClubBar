@@ -92,7 +92,7 @@ body{
         }
     }
 }
-video{
+.video{
     position:fixed;
     min-width: 100%;
     max-height: 125%;
@@ -412,7 +412,8 @@ video{
         100% {opacity: 100%;}
         }
         .articulo__img-principal{
-            width: 40%;
+            height: auto;
+            width: 42%;
             margin: 30px;
             border-radius: 10px;
         }       
