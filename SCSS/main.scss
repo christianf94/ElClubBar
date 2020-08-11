@@ -27,8 +27,31 @@ body{
     justify-content: center;
     background-color: #e5e5e5;
 }
+//----------------------------------------------------------------Media Queries---------------------------------------------------------//
+@media only screen and (max-width: $anchomd){
+    .contenedor__menu{
+        display:flex;
+        width: 100%;
+        max-width:1800px;
+        height:5%;
+        ul{
+            display:flex;
+        }
+        li{
+            margin:15px;
+            list-style-type:none;
+            text-align:center;
+        }
+        .caja__logo--img{
+            width:100%;
+            max-width: 1200px;
+        }  
+    }
+}
 
 //----------------------------------------------------------------NAV---------------------------------------------------------//
+
+
 .contenedor__menu{
     text-align: center;
     font-size: 2.8rem;
@@ -52,11 +75,13 @@ body{
         transition: 0s,1s;
         } 
         .caja__logo--img{
-            max-width: 120%;
-            margin:15px 0 0 15px;
+            width:100%;
+            max-width: 1200px;
+            margin: 8px;
+            padding: 8px;
             height: auto;
             animation-name: aparecer;
-            animation-duration: 3s;
+            animation-duration: 5s;
         } 
         @keyframes aparecer{
         0% {opacity:0%}
@@ -77,30 +102,29 @@ body{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        
-        height:70rem;
+        .video{
+            position:fixed;
+            min-width: 100%;
+            max-height: 125%;
+            top:45%;
+            left:50%;
+            transform: translateX(-50%) translateY(-50%) ;
+            z-index: -1;
+        }
         .video__title--END{
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-                color:black;
-                font-size: 4rem;
-                font-weight: bold;
+            color:black;
+            font-size: 4rem;
+            font-weight: bold;
             .title__index-center{
                 margin:10px 0 10px 40rem;
             }
         }
     }
 }
-.video{
-    position:fixed;
-    min-width: 100%;
-    max-height: 125%;
-    top:45%;
-    left:50%;
-    transform: translateX(-50%) translateY(-50%) ;
-    z-index: -1;
-}
+
 //----------------------------------------------------------------CICLOS---------------------------------------------------------//
 .contenedor{
     .contenedor__contenido{
@@ -237,32 +261,40 @@ body{
             padding: 10px;
             background-color: #919697be;
             border-radius: 23px 23px 23px 23px;
-            box-shadow: -2px -17px 80px -30px rgba(0,0,0,0.66);
+            box-shadow: 13px 2px 29px 6px rgba(0,0,0,0.66);
             text-align: center;
+            .info__div-strong{
+                text-align: center;
+            }
+            .info__div-lista{
+                font-size: 2.1rem;
+                list-style-type:none;
+            }
         }
-        .info__div-lista{
-            font-size: 2.1rem;
-            list-style-type:none;
+        .reserva__form{
+            padding:10px;
+            form{
+                margin:1px;
+                padding:1px;
+                text-align: center;
+                color: white;
+                background-color: rgba(31, 30, 30, 0.774) ;
+                border-radius: 1rem;
+                box-shadow: 13px 2px 29px 6px rgba(0,0,0,0.66);
+                font-size: 1.6rem;
+                legend{
+                    font-size: 2rem;
+                }
+                input{
+                    border-radius: 5px;
+                }
+                .button{
+                    margin:4px;
+                    width: 80%;
+                    height: 100%;
+                }
+            }
         }
-        input{
-            border-radius: 5px;
-            margin: 5px;
-            padding: 2px;
-        }
-        .button{
-            width: 80%;
-            height: 100%;
-        }
-    }
-    form{
-        margin:10px;
-        padding: 10px;
-        text-align: center;
-        color: white;
-        background-color: rgba(31, 30, 30, 0.774) ;
-        border-radius: 1rem;
-        box-shadow: 13px 2px 29px 6px rgba(0,0,0,0.66);
-        font-size: 1.6rem;
     }
 }
 //----------------------------------------------------------------TIENDA---------------------------------------------------------//
@@ -442,7 +474,8 @@ body{
             padding: 10px;
         }
         .contenido__info-text{
-            width: 60%;
+            width: 55%;
+            max-width:$anchoxl;
             font-size: 2rem;
             margin: 10px;
             padding: 10px;
