@@ -17,12 +17,13 @@
 <body>
 
   <section class="contenedor">
-    <nav class="contenedor__menu animate__animated animate__bounceInLeft  animate__slow 2s col-xs-2 col-sm-2 col-md-3 col-lg-2 col-xl-2">
-      <div class="animate__animated animate__pulse animate__infinite	infinite animate__slow	2s">
-        <a href="index.html"><img src="Multimedia\Logo El Club 2.png" alt="El Club Bar" class="caja__logo--img img-fluid"></a>
-      </div>
-      <br>
-        <ul>
+    <nav  class="contenedor__menu animate__animated animate__bounceInLeft  animate__slow 2s col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 " id="menu__responsive">
+      <input type="checkbox" id="check">
+          <label class="logo"> <a href="index.html" class="animate__animated  animate__pulse animate__infinite	infinite animate__slow	2s">El Club Bar</a></label>
+          <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+          </label>
+        <ul class="animate__animated animate__fadeInUp animate__delay1s 2s animate__slow 2s">
             <li><a href="ciclos.html">Ciclos</a></li>
             <li><a href="reservas.html">Reservas</a></li>
             <li><a href="tienda.html">Tienda</a></li>
@@ -33,11 +34,11 @@
 
     <br><hr>
 
-    <main class="contenedor__contenido animate__animated animate__fadeInRight  animate__slow 2s col-xs-10 col-sm-10 col-md-9 col-lg-10 col-xl-10">
+    <main class="contenedor__contenido animate__animated animate__fadeInRight  animate__slow 2s col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
       <h1 class="animate__animated animate__slideInDown  animate__delay-2s" >Ciclos</h1>
-      <div class="row contenido__info-center">
+      <div class="row contenido__info-center ">
         
-          <div id="carouselExampleFade" class="info__carousel-text carousel slide carousel-fade carousel img-fluid animate__animated animate__fadeIn animate__delay-2s	2s col-sm-12 col-md-6 col-lg-6 col-xl-6" data-ride="carousel">
+          <div id="carouselExampleFade" class="info__carousel-text carousel slide carousel-fade carousel img-fluid animate__animated animate__fadeIn animate__delay-2s	2s" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="Multimedia/ciclo0.gif" class="d-block w-100 imagen1" alt="Banda Rock&Roll">
@@ -86,7 +87,7 @@
             </a>
           </div>
 
-          <div class="info__acordion-text accordion col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" id="accordionExample">
+          <div class="info__acordion-text accordion" id="accordionExample">
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
@@ -99,7 +100,7 @@
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
                   <h5>Jazz Night</h5>
-                  <p>Disfruta de una noche para relajarse cargándose con vibras positivas al ritmo del jazz. En este espacio podrás bajar las revoluciones tomando una copa de vino o un trago clásico. Todo esto gracias al ambiente único que genera escuchar al saxophone, la batería, el contrabajo, y el trombón en vivo.</p>
+                  <p>Disfruta de una noche relajante cargándote de vibras positivas al ritmo del jazz. En este espacio podrás bajar las revoluciones tomando una copa de vino o un trago clásico. Todo esto gracias al ambiente único que genera escuchar al saxophone, la batería, el contrabajo, y el trombón en vivo.</p>
                 </div>
               </div>
             </div>
@@ -250,7 +251,7 @@
         <div >
           <H2>Bandas Invitadas y Eventos Especiales</H2>
           <i>Calendario 2020</i>
-
+          
           <div class="table-responsive">
             <table border="5x"cellpadding="10rem" class="table tabla__calendario-text2"> 
               <tr class="calendario__text-color">
@@ -308,12 +309,11 @@
   
   </section>
 <!------------------------------------------SCRIPT------------------------------------------------------->
-
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="js/wow.min.js"></script>
 <script> new WOW().init();</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  
 </body>
 </html>

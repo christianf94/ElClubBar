@@ -18,29 +18,28 @@
 
   <section class="contenedor">
 
-    <nav  class="contenedor__menu animate__animated animate__bounceInLeft  animate__slow 2s col-xs-2 col-sm-2 col-md-3 col-lg-2 col-xl-2">
-      <div class="menu__caja--animacion animate__animated  animate__pulse animate__infinite	infinite animate__slow	2s img-fluid">
-        <a href="index.html"><img src="Multimedia\Logo El Club 2.png" alt="El Club Bar" class="caja__logo--img"></a>
-      </div>
-      <br>
-        <ul class="animate__animated animate__fadeInUp animate__delay1s 2s animate__slow 2s ">
-            <li><a href="ciclos.html">Ciclos</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
-            <li><a href="tienda.html">Tienda</a></li>
-            <li><a href="menus.html">Ménus</a></li>
-            <li><a href="sobrenosotros.html">Nosotros</a></li>
-        </ul>
-    </nav>
+    <nav  class="contenedor__menu animate__animated animate__bounceInLeft  animate__slow 2s col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 " id="menu__responsive">
+      <input type="checkbox" id="check">
+          <label class="logo"> <a href="index.html" class="animate__animated  animate__pulse animate__infinite	infinite animate__slow	2s">El Club Bar</a></label>
+          <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+          </label>
+      <ul class="animate__animated animate__fadeInUp animate__delay1s 2s animate__slow 2s">
+          <li><a href="ciclos.html">Ciclos</a></li>
+          <li><a href="reservas.html">Reservas</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="menus.html">Ménus</a></li>
+          <li><a href="sobrenosotros.html">Nosotros</a></li>
+      </ul>
+  </nav>
 
     <br><hr>
 
-  <main class=" animate__animated animate__slideInDown  animate__slow 2s col-xs-10 col-sm-10 col-md-9 col-lg-10 col-xl-10"> 
-
-    <div class="contenedor__contenido">
-      <head><h1 class="animate__animated animate__slideInDown  animate__fast 500ms" >Un Equipo </h1></head>
+  <main class="contenedor__contenidoz animate__animated animate__slideInDown  animate__slow 2s col-xs-10 col-sm-10 col-md-9 col-lg-10 col-xl-10"> 
+      <head class="contenidoz-title"><h1 class="animate__animated animate__slideInDown  animate__fast 500ms" >Un Equipo </h1></head>
       <div class="aticulo__principal-center animate__animated animate__fadeInLeft animate__delay-2s">
         
-        <article class="aticulo__principal-text">
+        <article class="articulo__principal-text">
           <p>Queremos compartir con vos lo que nos gusta. 
           En este lugar preferimos disfrutar de la música en vivo con una buena pinta en la mano, tomarnos una copa de vino mientras vemos bailar un tango o una película, charlar con amigos comiendo una burga o compartir papas con cheddar mientras celebramos un cumpleaños o un gol.
           Porque creemos en la diversidad es que vamos por ella, mediante la música, los tragos y la comida, fusionando el arte y el entretenimiento mientras disfrutamos con quienes queremos, nuestros amigos.
@@ -49,8 +48,6 @@
         </article>
         <video src="Multimedia\indexvideo.mp4"  controls alt="Celebrar, amigos, el club bar, equipo." class="articulo__img-principal">
       </div>
-    </div>
-
 
     <div class="contenido__iframe-map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.479184744998!2d-58.4306679!3d-34.5884857!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x21e834c888d618f!2sEl%20Club%20Bar!5e0!3m2!1ses!2sar!4v1593037109015!5m2!1ses!2sar" width="400" height="270" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="iframe__div" ></iframe>
@@ -94,11 +91,11 @@
 
 <!------------------------------------------SCRIPT------------------------------------------------------->
 
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="js/wow.min.js"></script>
 <script> new WOW().init();</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
 </body>
 </html>
