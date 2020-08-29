@@ -238,25 +238,27 @@ body{
             }
             .tabla__calendario-text2{
                 text-align: center;
+                list-style-type:none;
                 background-color: rgba(0, 0, 0, 0.267);
                 width: 100%;
                 height: auto;
                 margin-top: 1rem;
                 border:black;
+                padding: 10px;    
                 animation-name: aparecer;
-                animation-duration: 5s;
+                animation-duration: 6s;
                 td{
                     font-family:$subfont;
                     font-size:1.5rem
+                }
+                @keyframes aparecer{
+                0% {opacity:0%}
+                100% {opacity: 100%;}
                 }
                 td ul li{
                     list-style-type:none;
                 }
             } 
-            @keyframes aparecer{
-            0% {opacity:0%}
-            100% {opacity: 100%;}
-            }
             .calendario__text-color{
                 background: rgb(34, 33, 33);
                 color: white;
@@ -736,15 +738,21 @@ body{
         flex-direction:column;
         width:100%;
     }
-    .info__acordion-text{
-        margin:10px 5px 5px 10px;
-        div{
-            border-radius: 31px;
-                p{
-                    font-size:1rem;
+    .contenedor {
+        .contenedor__contenido{
+            .contenido__info-center{
+                .info__acordion-text{
+                    margin:10px 5px 5px 10px;
+                    div{
+                        border-radius: 31px;
+                        p{
+                            font-size:1rem;
+                        }
+                    }
                 }
-            }
+            } 
         }
+    } 
     .contenido__tabla{
         width: 100%;
     }
@@ -761,4 +769,30 @@ body{
         flex-direction:column;
         height:60vh;
     }
-}
+    .contenedor__footer{
+        .footer___derechos-text{
+            font-size: 1.4rem;
+        }
+        .redes__titulo-bold{
+            font-size: 1.8rem;
+        }
+    }
+    .contenedor {
+        .contenedor__contenido{
+            .contenido__tabla{
+                h2{
+                    font-size:2.2rem
+                }
+            }
+        }
+    } 
+    .contenedor {
+        .contenedor__contenido{
+            .contenido_contacto-text{
+                p{
+                    font-size:1.8rem;
+                }
+            }
+        }
+    } 
+} 

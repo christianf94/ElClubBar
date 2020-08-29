@@ -185,24 +185,26 @@ body {
     opacity: 100%; } }
     .contenedor .contenedor__contenido .contenido__tabla .tabla__calendario-text2 {
       text-align: center;
+      list-style-type: none;
       background-color: rgba(0, 0, 0, 0.267);
       width: 100%;
       height: auto;
       margin-top: 1rem;
       border: black;
+      padding: 10px;
       animation-name: aparecer;
-      animation-duration: 5s; }
+      animation-duration: 6s; }
       .contenedor .contenedor__contenido .contenido__tabla .tabla__calendario-text2 td {
         font-family: "Open Sans", sans-serif;
         font-size: 1.5rem; }
-      .contenedor .contenedor__contenido .contenido__tabla .tabla__calendario-text2 td ul li {
-        list-style-type: none; }
 
 @keyframes aparecer {
   0% {
     opacity: 0%; }
   100% {
     opacity: 100%; } }
+      .contenedor .contenedor__contenido .contenido__tabla .tabla__calendario-text2 td ul li {
+        list-style-type: none; }
     .contenedor .contenedor__contenido .contenido__tabla .calendario__text-color {
       background: #222121;
       color: white; }
@@ -591,11 +593,11 @@ body {
     width: 100%; }
     .contenido__info-center h3 {
       font-size: 1.8rem; }
-  .info__acordion-text {
+  .contenedor .contenedor__contenido .contenido__info-center .info__acordion-text {
     margin: 10px 5px 5px 10px; }
-    .info__acordion-text div {
+    .contenedor .contenedor__contenido .contenido__info-center .info__acordion-text div {
       border-radius: 31px; }
-      .info__acordion-text div p {
+      .contenedor .contenedor__contenido .contenido__info-center .info__acordion-text div p {
         font-size: 1rem; }
   .contenido__tabla {
     width: 100%; } }
@@ -609,4 +611,12 @@ body {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 60vh; } }
+    height: 60vh; }
+  .contenedor__footer .footer___derechos-text {
+    font-size: 1.4rem; }
+  .contenedor__footer .redes__titulo-bold {
+    font-size: 1.8rem; }
+  .contenedor .contenedor__contenido .contenido__tabla h2 {
+    font-size: 2.2rem; }
+  .contenedor .contenedor__contenido .contenido_contacto-text p {
+    font-size: 1.8rem; } }
