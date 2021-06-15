@@ -542,7 +542,7 @@ body {
   .contenedor .contenedor__contenido .contenido__reserva-center .cartas h5 {
     font-size: 2.3rem; }
   .contenedor .contenedor__contenidoz .aticulo__principal-center .articulo__img-principal {
-    width:40%; }
+    width: 100%; }
   .contenedor .contenido__iframe-map {
     flex-wrap: wrap; }
   .contenedor .contenido__iframe-map .contenido__info-text {
