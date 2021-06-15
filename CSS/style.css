@@ -14,7 +14,7 @@ body {
   background-color: #e5e5e5; }
 
 .contenedor__menu {
-  max-width: 1400px;
+  max-width: 2000px;
   width: 100%;
   background: linear-gradient(#1b1b1e, black);
   height: 80px;
@@ -88,14 +88,15 @@ body {
   align-content: center;
   justify-content: center;
   font-family: "Teko", sans-serif;
-  max-width: 1500px;
+  max-width: 1920px;
   min-height: 820px;
   width: 100%;
   height: 100%; }
   .contenedor .contenedor__contenidox {
-    max-width: 1300px;
+    max-width: 1800px;
     width: 100%;
     min-height: 820px;
+    max-height: 1080px;
     height: 100%;
     margin-top: 20px; }
     .contenedor .contenedor__contenidox .contenido__video--principal {
@@ -525,7 +526,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 1500px;
+  max-width: 1900px;
   width: 100%;
   background: linear-gradient(#dd991b, #da8e02);
   border-radius: 23px 23px 0px 0px;
@@ -650,6 +651,9 @@ body {
     padding: 0px;}
   .contenedor .contenedor__contenido .contenid__rappi-div .menu__pedidos-a{
     width: 100%;
+  }
+  .contenedor .contenedor__contenidoz .aticulo__principal-center .articulo__principal-text{
+    width:90%;
   }
 }
 
