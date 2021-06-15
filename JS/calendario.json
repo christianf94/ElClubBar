@@ -1,0 +1,7 @@
+{
+    "calendario":[
+        {"nombre":"chris","email":"chris@hotmail.com","tlf":"1029384739","fecha":{"dia":20,"mes":"Noviembre","anio":2020},"hora":21,"min":30,"precioBase":1000,"zona":"patio","personas":"8","precioFinal":1500,"terminos":"Si","comentario":""},
+        {"nombre":"lucia lara","email":"lucia_2930@gmail.com","tlf":"1029384930","fecha":{"dia":24,"mes":"Noviembre","anio":2020},"hora":20,"min":30,"precioBase":1000,"zona":"patio","personas":"24","precioFinal":2800,"terminos":"No","comentario":"no se "},
+        {"nombre":"Juana Lagos","email":"juanita@hotmail.com","tlf":"1039482903","fecha":{"dia":14,"mes":"Diciembre","anio":2020},"hora":20,"min":7,"precioBase":1000,"zona":"living","personas":"30","precioFinal":2800,"terminos":"No","comentario":""}
+    ]
+}
