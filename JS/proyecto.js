@@ -118,16 +118,16 @@ function obtenerValorPersonas(){
     if (personas>=2 && personas<=30){
         $("#form-group-cantidad").removeClass("form-group-incorrecto")
         $("#form-group-cantidad").addClass("form-group-correcto")
-        $("#form-group-cantidad i").addClass("fa-check-circle")
-        $("#form-group-cantidad i").removeClass("fa-times-circle")
+        $("#form-group-cantidad #icon-validacion").addClass("fa-check-circle")
+        $("#form-group-cantidad #icon-validacion").removeClass("fa-times-circle")
         $("#form-group-cantidad .input-error").removeClass("input-error-activo")
         campos["personas"] = true;
     } 
     else {
         $("#form-group-cantidad").addClass("form-group-incorrecto")
         $("#form-group-cantidad").removeClass("form-group-correcto")
-        $("#form-group-cantidad i").addClass("fa-times-circle")
-        $("#form-group-cantidad i").removeClass("fa-check-circle")
+        $("#form-group-cantidad #icon-validacion").addClass("fa-times-circle")
+        $("#form-group-cantidad #icon-validacion").removeClass("fa-check-circle")
         $("#form-group-cantidad .input-error").addClass("input-error-activo")
         campos["fecha"] = false;
     }
@@ -163,7 +163,7 @@ const renderFuntion = (e) => {
         <div><h6><strong>Fecha</strong></h6><p>${dia+"/"+"/"+mes+"/"+anio+" "+hora+":"+min}</p></div>
         <div><h6><strong>Zona de la Reserva</strong></h6><p>${zona}</p></div>
         <div><h6><strong>Numero de Personas</strong></h6><p>${rev.personas}</p></div>
-        <div><h6><strong>Comentarios</strong></h6><p>${rev.comentario}</p></div>
+        <div class="table-responsive"><h6><strong>Comentarios</strong></h6><p>${rev.comentario}</p></div>
         <div><h6><strong>Monto</strong></h6><p>${"$"+ rev.precioFinal}</p></div>
         <div class="buttons">
         <button class="button-regresar" href="reservas.html"><a href="reservas.html" id="linkBoton">ACEPTAR</a></button>
@@ -210,16 +210,16 @@ const validarCampo = (expresiones, input, campo) => {
     if(expresiones.test(input.value)){
         $(`#form-group-${campo}`).removeClass("form-group-incorrecto")
         $(`#form-group-${campo}`).addClass("form-group-correcto")
-        $(`#form-group-${campo} i`).addClass("fa-check-circle")
-        $(`#form-group-${campo} i`).removeClass("fa-times-circle")
+        $(`#form-group-${campo} #icon-validacion`).addClass("fa-check-circle")
+        $(`#form-group-${campo} #icon-validacion`).removeClass("fa-times-circle")
         $(`#form-group-${campo} .input-error`).removeClass("input-error-activo")
         campos[campo] = true;
     }
     else{
         $(`#form-group-${campo}`).addClass("form-group-incorrecto")
         $(`#form-group-${campo}`).removeClass("form-group-correcto")
-        $(`#form-group-${campo} i`).addClass("fa-times-circle")
-        $(`#form-group-${campo} i`).removeClass("fa-check-circle")
+        $(`#form-group-${campo} #icon-validacion`).addClass("fa-times-circle")
+        $(`#form-group-${campo} #icon-validacion`).removeClass("fa-check-circle")
         $(`#form-group-${campo} .input-error`).addClass("input-error-activo")
         campos[campo] = false;
     }

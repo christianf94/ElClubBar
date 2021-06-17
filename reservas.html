@@ -16,7 +16,7 @@
 
 <body> <!------------------------------------------BODY------------------------------------------------------->
 
-    <nav class="contenedor__menu animate__animated animate__slideInLeft  animate__slow 2s" id="contenedor__menu"> <!-----------------------------------------NAV------------------------------------------------------->
+    <nav class="contenedor__menu animate__animated animate__fadeInLeftBig  animate__slow 2s" id="contenedor__menu"> <!-----------------------------------------NAV------------------------------------------------------->
         <input type="checkbox" id="check">
             <label class="logo fe-pulse" id="logo_In"> <a href="index.html">El Club Bar</a></label>
             <label for="check" class="checkbtn" id="checkbtn"> 
@@ -96,7 +96,7 @@
                         <label for="Nombre-Apellido">Nombre y Apellido</label>
                         <div class="input-validacion">
                             <input type="text" name="Nombre-Apellido" id="Nombre-Apellido" required/>
-                            <i class="icono-validacion far fa-times-circle"></i>
+                            <i class="icono-validacion far fa-times-circle" id="icon-validacion"></i>
                         </div>
                         <p class="input-error">Ingrese un nombre valido sin numeros o signos</p>
                     </div>
@@ -104,7 +104,7 @@
                         <label for="Email"> Correo Electronico</label>
                         <div  class="input-validacion">
                             <input type="Email" name="Email" id="Email" placeholder="example@hotmail.com" required/>
-                            <i class="icono-validacion far fa-times-circle"></i>
+                            <i class="icono-validacion far fa-times-circle" id="icon-validacion"></i>
                         </div>
                         <p class="input-error">Ingrese un correo electronico valido</p>
                     </div>
@@ -112,7 +112,7 @@
                         <label for="Telefono"> Numero de Telefono</label>
                         <div  class="input-validacion">
                             <input type="tel" name="Telefono" id="Telefono" placeholder="11 7465-8521" required/> 
-                            <i class="icono-validacion far fa-times-circle"></i>
+                            <i class="icono-validacion far fa-times-circle" id="icon-validacion"></i>
                         </div>
                         <p class="input-error">Ingrese un numero de telefono valido</p>
                     </div>
@@ -139,7 +139,7 @@
                         <label for="number">Numero de Personas (Min:02 - Max:30):</label>
                         <div  class="input-validacion">
                             <input type="number" maxlength="12" id="number" name="number" min="1" max="30" placeholder="00" required/>
-                            <i class="icono-validacion far fa-times-circle"></i>
+                            <i class="icono-validacion far fa-times-circle" id="icon-validacion"></i>
                         </div>
                         <p class="input-error">Ingrese una cantidad de personas valida</p>
                     </div>
@@ -152,7 +152,7 @@
                     </div>
                     <div>
                         <label for="Comentario">Comentarios</label> <br>
-                        <textarea name="Comentario" id="Comentario" cols="55" rows="5" placeholder="Comentarios o Solicitudes"></textarea>
+                        <textarea name="Comentario" id="Comentario" placeholder="Comentarios o Solicitudes"></textarea>
                     </div>
                     <button type="submit" value="Submit" id="Submit">Reservar</button>
                     <button type="reset">Reiniciar</button>
