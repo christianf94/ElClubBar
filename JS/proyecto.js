@@ -20,8 +20,8 @@ var hora=0;
 var min=0;
 
 const expresiones = {
-    nombre: /^[a-zÀ-ÿ\s]{1,40}$/,
-    email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    nombre: /^[aA-zÀ-ÿ\s]{1,40}$/,
+    email: /^[aA-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     tlf: /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/,
 }
 const campos = {
