@@ -34,7 +34,7 @@ body {
   animation: shine 2s infinite;
 }
 
-@-webkit-keyframes shine {
+@keyframes shine {
   from {
     -webkit-mask-position: 150%;
   }
@@ -96,21 +96,24 @@ body {
     max-width: 1800px;
     width: 100%;
     min-height: 820px;
-    max-height: 1080px;
     height: 100%;
     margin-top: 20px; }
-    .contenedor .contenedor__contenidox .contenido__video--principal {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column; }
-      .contenedor .contenedor__contenidox .contenido__video--principal .video {
-        max-width: 1400px;
-        width: 100%;
-        border-radius: 12px 12px 12px 12px;
-        box-shadow: 0px 47px 154px -45px rgba(0, 0, 0, 0.73);
-        box-shadow: 0 0 0 0 black;
-        animation: pulse 2s infinite; }
+.contenedor .contenedor__contenidox .contenido__video--principal {
+  width: 100%;
+  height: auto;}
+.contenedor .contenedor__contenidox .contenido__video--principal .video_principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px 12px 12px 12px;
+  box-shadow: 0px 47px 154px -45px rgba(0, 0, 0, 0.73);
+  box-shadow: 0 0 0 0 black;
+  animation: pulse 2s infinite; }
+.contenedor .contenedor__contenidox .contenido__video--principal .video_principal .video{
+  width: 100%;
+  border-radius: 12px 12px 12px 12px;
+  }
 
 @keyframes pulse {
   0% {
@@ -121,6 +124,7 @@ body {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); } }
 .contenedor .contenedor__contenidox .contenido__video--principal .video_responsive video{
   display: none;
+  border-radius: 12px 12px 12px 12px;
 }
 .contenedor .contenedor__contenidox .contenido__video--principal .video__title--END h1 {
   color: black;
@@ -549,7 +553,7 @@ body {
     background-color:grey;
     border-radius: 30%;}
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1440px) {
   .contenedor .contenedor__contenido .reserva__info-text {
     margin: 10px 10px 10px 50px; }
     .contenedor .contenedor__contenido .reserva__info-text p {
@@ -624,7 +628,9 @@ body {
     display: none;
   }
   .contenedor .contenedor__contenidox .contenido__video--principal .video_responsive video{
-  display: block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
   .contenedor .contenedor__contenidox .word__carousel .carousel__li{
     margin-left: 10px;
