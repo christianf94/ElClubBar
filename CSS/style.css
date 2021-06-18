@@ -94,9 +94,8 @@ body {
   width: 100%;
   height: 100%; }
   .contenedor .contenedor__contenidox {
-    max-width: 1800px;
+    max-width: 1900px;
     width: 100%;
-    min-height: 820px;
     height: 100%;
     margin-top: 20px; }
 .contenedor .contenedor__contenidox .contenido__video--principal {
@@ -262,8 +261,94 @@ body {
         border-radius: 50%;
     }
 
+.contenedor .contenedor__contenidox .DivPrueba{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;  
+  width: 100%;
+  margin-top: 10px;
+}
+.contenedor .contenedor__contenidox .DivPrueba a{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.contenedor .contenedor__contenidox .DivPrueba a:hover {
+  color: #c57409;
+}
+.contenedor .contenedor__contenidox .DivPrueba .a,.b,.c,.d,.e,.f,  i{
+  padding:5px;
+  font-size: 6rem;
+  color: #222121;
+}
+
+.contenedor .contenedor__contenidox .DivPrueba .a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:  15%;
+  height: 50%;
+  background-color: grey;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.contenedor .contenedor__contenidox .DivPrueba .b{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:  15%;
+  height: 50%;
+  background-color: black;
+}
+
+.contenedor .contenedor__contenidox .DivPrueba .c{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 50%;
+  background-color: grey;
+}
+
+.contenedor .contenedor__contenidox .DivPrueba .d{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 50%;
+  background-color: black;
+}
+
+.contenedor .contenedor__contenidox .DivPrueba .e{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 50%;
+  background-color: grey;
+}
+
+.contenedor .contenedor__contenidox .DivPrueba .f{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 50%;
+  background-color:black;
+  border-radius: 0px 10px 10px 0px;
+}
+
 .contenedor .contenedor__contenido {
-  max-width: 1500px;
+  max-width: 1800px;
   width: 100%;
   height: 100%;
   margin-top: 20px;
@@ -531,7 +616,7 @@ body {
   color: #c57409; }
 
 .contenedor__footer {
-  margin-top:30px;
+  margin-top:20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -659,6 +744,12 @@ body {
   .contenedor .contenedor__contenidox .word__carousel .carousel__li{
     margin-left: 10px;
   }
+  .contenedor .contenedor__contenidox .DivPrueba a{
+    font-size: 1.5rem;
+  }
+  .contenedor .contenedor__contenidox .DivPrueba .a,.b,.c,.d,.e,.f,  i{
+    font-size: 2.5rem;
+  }
   .contenido__info-center {
     flex-wrap: wrap;
     flex-direction: column;
@@ -718,5 +809,11 @@ ul {
   } 
   .contenedor .contenedor__contenidox .word__carousel {
     flex-direction: column;
+}
+.contenedor .contenedor__contenidox .DivPrueba a{
+  font-size: 1rem;
+}
+.contenedor .contenedor__contenidox .DivPrueba .a,.b,.c,.d,.e,.f,  i{
+  font-size: 1.5rem;
 }
 }
