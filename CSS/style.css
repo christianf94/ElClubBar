@@ -634,6 +634,8 @@ body {
     left: 0; }
   .contenedor .contenedor__contenidox .contenido__video--principal .video_principal video{
     display: none;
+  }
+  .contenedor .contenedor__contenidox .contenido__video--principal .video_principal{
     box-shadow: none;
     animation:none;
   }
