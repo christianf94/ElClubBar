@@ -95,7 +95,7 @@ function obtenerValorZona(){
         $("#form-group-zonas").removeClass("form-group-incorrecto")
         $("#form-group-zonas").addClass("form-group-correcto")
         $("#form-group-zonas .input-error").removeClass("input-error-activo")
-        $(".contenedor__conetido-fondo").css({ "background-image": "url(Multimedia/inside5.png)"});
+        $(".contenedor__conetido-fondo").css({ "background-image": "url(Multimedia/Inside5.png"});
         campos["zona"] = true;
     }
     else if(zona=="terraza"){
