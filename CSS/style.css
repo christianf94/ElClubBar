@@ -313,7 +313,7 @@ body {
           text-align: justify; }
       .contenedor .contenedor__contenido .contenido__info-center .info__acordion-text h3 {
         color: rgb(216, 215, 215);
-        font-size: 2rem; }
+        font-size: 1.8rem; }
       .contenedor .contenedor__contenido .contenido__info-center .info__acordion-text h3:hover {
         color: #413d36d5;
       }
@@ -635,6 +635,7 @@ body {
   .contenedor .contenedor__contenidox .contenido__video--principal .video_principal video{
     display: none;
     box-shadow: none;
+    animation:none;
   }
   .contenedor .contenedor__contenidox .contenido__video--principal .video_responsive video{
     display: flex;
